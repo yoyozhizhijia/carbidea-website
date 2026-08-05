@@ -288,9 +288,13 @@
           <textarea id="f-desc" name="description" rows="4"></textarea>
         </div>
         <div class="field">
-          <label for="f-file">Drawing upload (PDF, DXF, DWG, STEP)</label>
-          <input type="file" id="f-file" name="drawing" accept=".pdf,.dxf,.dwg,.step,.stp">
-          <p class="field-hint">Large files? Email them to sales@carbidea.com.</p>
+          <label for="f-file">Drawing, photo or document (PDF · DXF · DWG · STEP · JPG · PNG · Word)</label>
+          <div class="file-row">
+            <label class="file-btn" for="f-file">Choose file…</label>
+            <input type="file" id="f-file" name="drawing" class="file-input-hidden" accept=".pdf,.dxf,.dwg,.step,.stp,.jpg,.jpeg,.png,.doc,.docx">
+            <span class="file-name" id="file-name"></span>
+          </div>
+          <p class="field-hint">A sketch, photo or Word document works too — no formal drawing needed. Large files? Email them to sales@carbidea.com.</p>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Send Drawing / Get Quote</button>
       </form>
@@ -298,6 +302,13 @@
   </section>
 
 </main>
+
+<script>
+document.getElementById('f-file').addEventListener('change', function () {
+  var n = this.files && this.files[0] ? this.files[0].name : '';
+  document.getElementById('file-name').textContent = n;
+});
+</script>
 
 <footer class="site-footer">
   <div class="container footer-inner">
