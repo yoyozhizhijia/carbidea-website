@@ -263,11 +263,7 @@
         </ul>
         <p class="quote-contact">Email: <a href="mailto:sales@carbidea.com">sales@carbidea.com</a><br>WhatsApp: <a href="https://wa.me/0000000000" rel="noopener">+00 000 0000 000</a><br><span class="muted">(WhatsApp number to be confirmed)</span></p>
       </div>
-      <form class="quote-form" action="https://formsubmit.co/sales@carbidea.com" method="POST">
-        <input type="hidden" name="_subject" value="New RFQ from carbidea.com">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://carbidea.com/#quote">
+      <form class="quote-form" id="quote-form" action="#" method="POST" onsubmit="return sendQuote(event)">
         <div class="field">
           <label for="f-name">Name *</label>
           <input type="text" id="f-name" name="name" required autocomplete="name">
@@ -295,7 +291,7 @@
             <input type="file" id="f-file" name="drawing" class="file-input-hidden" accept=".pdf,.dxf,.dwg,.step,.stp,.jpg,.jpeg,.png,.doc,.docx">
             <span class="file-name" id="file-name"></span>
           </div>
-          <p class="field-hint">A sketch, photo or Word document works too — no formal drawing needed. Large files? Email them to sales@carbidea.com.</p>
+          <p class="field-hint">Submitting opens your email app — your details are pre-filled. Attach the drawing or photo in the email. No drawing needed: a sketch or description works too.</p>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Send Drawing / Get Quote</button>
       </form>
@@ -309,6 +305,24 @@ document.getElementById('f-file').addEventListener('change', function () {
   var n = this.files && this.files[0] ? this.files[0].name : '';
   document.getElementById('file-name').textContent = n;
 });
+
+function sendQuote(e) {
+  e.preventDefault();
+  var g = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+  var name = g('f-name'), company = g('f-company'), email = g('f-email'),
+      country = g('f-country'), desc = g('f-desc');
+  var file = document.getElementById('f-file');
+  var fileName = file && file.files && file.files[0] ? file.files[0].name : '';
+
+  var body = 'Name: ' + name + '\nCompany: ' + company + '\nEmail: ' + email + '\nCountry: ' + country;
+  body += '\n\nPart description:\n' + desc;
+  if (fileName) body += '\n\nPlease find attached: ' + fileName;
+  body += '\n\n(Submitted via carbidea.com)';
+
+  var subject = 'Quote Request' + (name ? ' from ' + name : '');
+  window.location.href = 'mailto:sales@carbidea.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  return false;
+}
 </script>
 
 <footer class="site-footer">
