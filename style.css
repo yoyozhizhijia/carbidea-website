@@ -226,6 +226,7 @@ details p { padding: 0 22px 18px; color: var(--ink-2); }
   .work-grid { grid-template-columns: repeat(2, 1fr); }
   .quote-inner { grid-template-columns: 1fr; }
   .main-nav a:not(.nav-cta) { display: none; }
+  .main-nav a[href="resources.html"] { display: inline-block; }
   .flow { grid-template-columns: 1fr; gap: 14px; }
   .flow-step:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -19px; transform: translateX(-50%); }
   .flow-step { padding-bottom: 20px; }
