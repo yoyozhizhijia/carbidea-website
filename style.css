@@ -31,7 +31,11 @@ header { background: var(--ink); color: #fff; }
 }
 .nav-main { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
 .brand { display: flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; }
-.brand img { height: 36px; width: auto; }
+.brand img {
+  height: 40px; width: auto;
+  background: #fff; border-radius: 4px; padding: 5px 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
 .brand-text { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.02em; line-height: 1.1; }
 .brand-text small { font-size: 0.68rem; color: #B8C2CB; font-weight: 400; display: block; }
 .nav-links { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
