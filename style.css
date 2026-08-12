@@ -196,20 +196,34 @@ footer { background: var(--ink); color: #AEB8C1; padding: 28px 0; }
   .nav-links a { padding: 7px 9px; font-size: 0.84rem; }
 }
 @media (max-width: 600px) {
+  .wrap {
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-right));
+  }
   .brand img { height: 38px; }
   .nav-main { flex-wrap: wrap; gap: 8px; }
   .nav-links { width: 100%; justify-content: flex-start; }
   .nav-links a { padding: 6px 9px; font-size: 0.82rem; }
   .nav-links .cta { margin-left: auto; }
-  .hero h1 { font-size: 1.8rem; }
+  .hero { padding: 40px 0 48px; }
+  .hero h1 { font-size: 1.75rem; line-height: 1.35; }
+  .hero img { border-radius: 10px; }
+  .hero-btns { gap: 12px; }
   .hero-btns .btn { width: 100%; text-align: center; }
-  .badges-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-size: 0.8rem; }
-  .prod-grid { grid-template-columns: 1fr; }
-  .steps { grid-template-columns: 1fr; }
-  .res-cards { grid-template-columns: 1fr; }
+  .hero-facts { gap: 16px 26px; }
+  .badges-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; font-size: 0.8rem; padding: 18px 0; }
+  section.sec { padding: 44px 0; }
+  .prod-grid { grid-template-columns: 1fr; gap: 18px; }
+  .prod-card .body { padding: 16px 18px; }
+  .steps { grid-template-columns: 1fr; gap: 14px; }
+  .res-cards { grid-template-columns: 1fr; gap: 14px; }
+  .check-list li { padding: 12px 0; }
   .grade-table th, .grade-table td { padding: 8px 8px; font-size: 0.78rem; }
   .grade-table th:nth-child(5), .grade-table td:nth-child(5) { display: none; }
   .guide-q { padding: 16px 18px; }
+  .contact-grid { gap: 34px; }
+  .cta-inner { padding: 40px 0; }
+  .foot { gap: 6px; }
 }
 
 /* ---------- certifications ---------- */
