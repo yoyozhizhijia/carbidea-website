@@ -222,7 +222,13 @@ footer { background: var(--ink); color: #AEB8C1; padding: 28px 0; }
   .grade-table th:nth-child(5), .grade-table td:nth-child(5) { display: none; }
   .guide-q { padding: 16px 18px; }
   .contact-grid { gap: 34px; }
-  .cta-inner { padding: 40px 0; }
+  .cta-inner {
+    flex-direction: column; align-items: flex-start;
+    gap: 18px; padding: 38px 0 44px;
+  }
+  .cta h2 { font-size: 1.35rem; }
+  .cta p { line-height: 1.65; }
+  .cta .btn-white { width: 100%; text-align: center; }
   .foot { gap: 6px; }
 }
 
