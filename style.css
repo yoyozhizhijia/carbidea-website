@@ -57,6 +57,9 @@ header { background: var(--white); color: var(--ink); border-bottom: 1px solid v
 
 /* ---------- hero ---------- */
 .hero { background: var(--white); border-bottom: 1px solid var(--line); }
+.hero-slogan { color: var(--blue); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px; }
+.slogan-line { color: var(--blue); font-size: 0.95rem; margin-bottom: 12px; }
+.slogan-line em { font-style: italic; }
 .hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 44px; align-items: center; padding: 56px 0; }
 .hero h1 { font-size: 2.4rem; line-height: 1.22; font-weight: 700; margin-bottom: 16px; }
 .hero p { color: var(--ink-2); font-size: 1.05rem; max-width: 500px; margin-bottom: 24px; }
