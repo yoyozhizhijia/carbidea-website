@@ -203,3 +203,12 @@ footer { background: var(--ink); color: #AEB8C1; padding: 28px 0; }
   .grade-table th:nth-child(5), .grade-table td:nth-child(5) { display: none; }
   .guide-q { padding: 16px 18px; }
 }
+
+/* ---------- certifications ---------- */
+.cert-block {
+  margin-top: 24px; padding: 18px; text-align: center;
+  background: var(--white); border: 1px solid var(--line); border-radius: 4px; box-shadow: var(--shadow);
+}
+.cert-block img { width: 120px; height: auto; display: block; margin: 0 auto 12px; }
+.cert-block p { font-size: 0.88rem; color: var(--ink-2); margin-bottom: 0; }
+.cert-block strong { color: var(--ink); }
