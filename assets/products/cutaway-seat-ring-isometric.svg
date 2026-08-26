@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 500" width="100%" font-family="Helvetica, Arial, sans-serif">
+<title>Carbide Seat Ring - Half Section</title>
+<desc>Half-section schematic. Left half = exterior view, right half = section view. Dark grey = cemented carbide. Generic, not to scale.</desc>
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"  stop-color="#5A626B"/>
+    <stop offset="48%" stop-color="#454C54"/>
+    <stop offset="52%" stop-color="#2E343B"/>
+    <stop offset="100%" stop-color="#22272D"/>
+  </linearGradient>
+  <pattern id="cut" x="0" y="0" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#3A4148"/>
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#FFFFFF" stroke-width="1" opacity="0.85"/>
+  </pattern>
+  <linearGradient id="hilite" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+    <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.15"/>
+  </linearGradient>
+  <clipPath id="leftHalf"><rect x="0" y="0" width="360" height="500"/></clipPath>
+  <clipPath id="rightHalf"><rect x="360" y="0" width="620" height="500"/></clipPath>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#1E293B"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="980" height="500" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<text x="40" y="36" font-size="15" font-weight="bold" fill="#1E293B">Tungsten Carbide Seat Ring - Half Section</text>
+<text x="40" y="54" font-size="10.5" fill="#64748B">Generic schematic - left = exterior, right = section. Dark grey = cemented carbide (WC).</text>
+<path d="M 230.0,150.0 L 490.0,150.0 L 465.0,370.0 L 255.0,370.0 Z M 310.0,150.0 L 410.0,150.0 L 410.0,370.0 L 310.0,370.0 Z" fill-rule="evenodd" fill="url(#body)" stroke="#1E293B" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 230.0,150.0 L 490.0,150.0 L 465.0,370.0 L 255.0,370.0 Z M 310.0,150.0 L 410.0,150.0 L 410.0,370.0 L 310.0,370.0 Z" fill-rule="evenodd" fill="url(#cut)" clip-path="url(#rightHalf)"/>
+<path d="M 230.0,150.0 L 490.0,150.0 L 465.0,370.0 L 255.0,370.0 Z M 310.0,150.0 L 410.0,150.0 L 410.0,370.0 L 310.0,370.0 Z" fill-rule="evenodd" fill="url(#hilite)" stroke="none"/>
+<g stroke="#1E293B" stroke-width="0.9" stroke-dasharray="10,3,1.5,3" fill="none"><line x1="360" y1="135" x2="360" y2="385"/></g>
+<text x="360" y="128" font-size="9.5" fill="#64748B" text-anchor="middle">Axis</text>
+<line x1="310" y1="154" x2="310" y2="366" stroke="#000000" stroke-width="2" opacity="0.25"/>
+<line x1="410" y1="154" x2="410" y2="366" stroke="#000000" stroke-width="2" opacity="0.25"/>
+<line x1="282" y1="150" x2="140" y2="105" stroke="#1E293B" stroke-width="0.9" marker-end="url(#ar)"/>
+<line x1="140" y1="105" x2="50" y2="105" stroke="#1E293B" stroke-width="0.9"/>
+<text x="42" y="92" font-size="11" font-weight="bold" fill="#1E293B">Sealing face</text>
+<text x="42" y="105" font-size="9.5" fill="#64748B">Top face - narrow contact</text>
+<text x="42" y="118" font-size="9.5" fill="#64748B">against mating part</text>
+<line x1="475" y1="340" x2="680" y2="190" stroke="#1E293B" stroke-width="0.9" marker-end="url(#ar)"/>
+<line x1="680" y1="190" x2="760" y2="190" stroke="#1E293B" stroke-width="0.9"/>
+<text x="768" y="182" font-size="11" font-weight="bold" fill="#1E293B">Tapered outer band</text>
+<text x="768" y="194" font-size="9.5" fill="#64748B">Larger at top, narrower at bottom</text>
+<line x1="410" y1="260" x2="680" y2="290" stroke="#1E293B" stroke-width="0.9" marker-end="url(#ar)"/>
+<line x1="680" y1="290" x2="760" y2="290" stroke="#1E293B" stroke-width="0.9"/>
+<text x="768" y="282" font-size="11" font-weight="bold" fill="#1E293B">Through bore</text>
+<text x="768" y="294" font-size="9.5" fill="#64748B">Honed media passage</text>
+<line x1="450" y1="350" x2="170" y2="380" stroke="#1E293B" stroke-width="0.9" marker-end="url(#ar)"/>
+<line x1="170" y1="380" x2="80" y2="380" stroke="#1E293B" stroke-width="0.9"/>
+<text x="72" y="372" font-size="11" font-weight="bold" fill="#1E293B">Cut face</text>
+<text x="72" y="384" font-size="9.5" fill="#64748B">Section view - solid WC</text>
+<text x="72" y="396" font-size="9.5" fill="#64748B">dense, homogeneous</text>
+<g transform="translate(40, 420)">
+  <rect x="0" y="0" width="280" height="42" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="12" y="16" font-size="10" font-weight="bold" fill="#1E293B">Material key</text>
+  <rect x="12" y="22" width="18" height="12" fill="#454C54" stroke="#1E293B" stroke-width="0.8"/>
+  <text x="36" y="32" font-size="9.5" fill="#475569">Exterior view - solid WC</text>
+  <rect x="160" y="22" width="18" height="12" fill="url(#cut)" stroke="#1E293B" stroke-width="0.8"/>
+  <text x="184" y="32" font-size="9.5" fill="#475569">Section - WC material</text>
+</g>
+<text x="380" y="488" font-size="9" fill="#94A3B8" text-anchor="middle">Generic schematic - not to scale. Form is typical of hard-seat rings; final profile per customer drawing.</text>
+<rect x="560" y="22" width="180" height="200" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<text x="574" y="42" font-size="10" font-weight="bold" fill="#1E293B">3D preview</text>
+<path d="M 616,120 A 34.0 20.0 0 1 1 684,120 A 34.0 20.0 0 1 1 616,120 Z M 634,120 A 16.0 9.5 0 1 0 666,120 A 16.0 9.5 0 1 0 634,120 Z" fill-rule="evenodd" fill="#4A525A" stroke="#1E293B" stroke-width="1.3"/>
+<path d="M 616,120 A 34.0 20.0 0 0 0 684,120 L 684,154 A 34.0 20.0 0 0 1 616,154 Z" fill="#3F464D" stroke="#1E293B" stroke-width="1.3"/>
+<path d="M 634,120 A 16.0 9.5 0 0 0 666,120 L 666,154 A 16.0 9.5 0 0 1 634,154 Z" fill="#2A3037" stroke="#1E293B" stroke-width="1.2"/>
+<path d="M 616,154 A 34.0 20.0 0 0 0 684,154" fill="none" stroke="#1E293B" stroke-width="1"/>
+<path d="M 624,135 L 639,127 L 639,161 L 624,169 Z" fill="url(#cut)" stroke="#1E293B" stroke-width="1.4" stroke-linejoin="round"/>
+</svg>
