@@ -1,1 +1,18 @@
+# 环境/密钥
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# 部署缓存
 .edgeone/
+.workbuddy/
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统
+.DS_Store
+Thumbs.db
