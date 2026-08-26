@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" font-family="Helvetica, Arial, sans-serif">
+  <title>Ball Valve WC Seat — Assembly Cross-Section</title>
+  <desc>Assembly cross-section of a hard-seated floating ball valve. Tungsten carbide seat: scraper face against ball (first seal), outer taper wedged into valve body (second seal). Layout per patent CN220668450U; seat grades YG15C/YG10 class.</desc>
+
+  <defs>
+    <pattern id="seat" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#FFFFFF"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#1E293B" stroke-width="0.8"/>
+    </pattern>
+    <pattern id="ball" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <rect width="6" height="6" fill="#FFFFFF"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#334155" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="body" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#FFFFFF"/>
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#94A3B8" stroke-width="0.7"/>
+    </pattern>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F7FB"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1E293B"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="520" rx="14" fill="url(#bgGrad)" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="40" y="36" font-size="15" font-weight="bold" fill="#1E293B">Ball Valve — Tungsten Carbide Seat, Assembly Cross-Section</text>
+  <text x="40" y="54" font-size="10.5" fill="#64748B">Hard-seated floating ball valve · WC seat: scraper face (1st seal) + outer taper wedged into body (2nd seal) · ref. CN220668450U</text>
+
+  <!-- Flow axis -->
+  <line x1="56" y1="250" x2="704" y2="250" stroke="#1E293B" stroke-width="0.9" stroke-dasharray="10,3,1.5,3"/>
+
+  <!-- ============ VALVE BODY ============ -->
+  <!-- Left body: tapered bore matching left seat taper -->
+  <path d="M 302,182 L 302,222.5 L 260,222.5 L 268,188 L 268,168 L 340,168 L 340,332 L 268,332 L 268,312 L 302,277.5 L 302,318 Z" fill="url(#body)"/>
+  <!-- Right body: mirrored -->
+  <path d="M 298,182 L 298,222.5 L 340,222.5 L 332,188 L 332,168 L 260,168 L 260,332 L 332,332 L 332,312 L 298,277.5 L 298,318 Z" fill="url(#body)"/>
+
+  <!-- ============ BALL ============ -->
+  <circle cx="300" cy="250" r="72" fill="url(#ball)"/>
+
+  <!-- ============ WC SEATS ============ -->
+  <!-- Right seat (upper): scraper at ball, taper outward-right -->
+  <path d="M 232.1,165 L 244,165 L 298,182 L 298,222.5 L 232.1,222.5 Z" fill="url(#seat)"/>
+  <!-- Right seat (lower) -->
+  <path d="M 232.1,277.5 L 298,277.5 L 298,318 L 244,335 L 232.1,335 Z" fill="url(#seat)"/>
+  <!-- Left seat (upper) -->
+  <path d="M 367.9,165 L 356,165 L 302,182 L 302,222.5 L 367.9,222.5 Z" fill="url(#seat)"/>
+  <!-- Left seat (lower) -->
+  <path d="M 367.9,277.5 L 367.9,335 L 356,335 L 302,318 L 302,277.5 Z" fill="url(#seat)"/>
+
+  <!-- ============ FLOW BORE (white passage) ============ -->
+  <rect x="236" y="226" width="128" height="48" fill="#FFFFFF"/>
+  <rect x="298" y="226" width="24" height="48" fill="#FFFFFF"/>
+  <rect x="278" y="226" width="24" height="48" fill="#FFFFFF"/>
+
+  <!-- ============ OUTLINES ============ -->
+  <!-- Ball -->
+  <path d="M 228,250 A 72,72 0 0 1 372,250" fill="none" stroke="#1E293B" stroke-width="1.8"/>
+  <path d="M 372,250 A 72,72 0 0 1 228,250" fill="none" stroke="#1E293B" stroke-width="1.8"/>
+  <!-- Bore passage -->
+  <rect x="236" y="226" width="128" height="48" fill="none" stroke="#1E293B" stroke-width="1.4"/>
+  <line x1="278" y1="226" x2="278" y2="274" stroke="#1E293B" stroke-width="1"/>
+  <line x1="302" y1="226" x2="302" y2="274" stroke="#1E293B" stroke-width="1"/>
+  <!-- Right seat -->
+  <path d="M 232.1,165 L 244,165 L 298,182 L 298,222.5" fill="none" stroke="#1E293B" stroke-width="1.9" stroke-linejoin="round"/>
+  <path d="M 232.1,222.5 L 232.1,165" fill="none" stroke="#1E293B" stroke-width="1.9"/>
+  <path d="M 298,277.5 L 298,318 L 244,335 L 232.1,335 L 232.1,277.5" fill="none" stroke="#1E293B" stroke-width="1.9" stroke-linejoin="round"/>
+  <!-- Left seat -->
+  <path d="M 367.9,165 L 356,165 L 302,182 L 302,222.5" fill="none" stroke="#1E293B" stroke-width="1.9" stroke-linejoin="round"/>
+  <path d="M 367.9,222.5 L 367.9,165" fill="none" stroke="#1E293B" stroke-width="1.9"/>
+  <path d="M 302,277.5 L 302,318 L 356,335 L 367.9,335 L 367.9,277.5" fill="none" stroke="#1E293B" stroke-width="1.9" stroke-linejoin="round"/>
+  <!-- Body outlines -->
+  <path d="M 302,182 L 302,222.5 L 260,222.5 L 268,188 L 268,168 L 340,168 L 340,332 L 268,332 L 268,312 L 302,277.5 L 302,318 Z" fill="none" stroke="#1E293B" stroke-width="1.9" stroke-linejoin="round"/>
+  <path d="M 298,182 L 298,222.5 L 340,222.5 L 332,188 L 332,168 L 260,168 L 260,332 L 332,332 L 332,312 L 298,277.5 L 298,318 Z" fill="none" stroke="#1E293B" stroke-width="1.9" stroke-linejoin="round"/>
+
+  <!-- Scraper lip detail (right seat, upper bore edge) -->
+  <path d="M 232.1,226 L 238.5,222 L 238.5,226 Z" fill="#1E293B"/>
+
+  <!-- ============ ANNOTATIONS ============ -->
+  <!-- ① First seal: scraper vs ball -->
+  <line x1="234" y1="195" x2="150" y2="130" stroke="#1E293B" stroke-width="0.9" marker-end="url(#arrow)"/>
+  <line x1="150" y1="130" x2="60" y2="130" stroke="#1E293B" stroke-width="0.9"/>
+  <text x="52" y="112" font-size="11" font-weight="bold" fill="#1E293B">① First sealing face</text>
+  <text x="52" y="124" font-size="9.5" fill="#64748B">Scraper lip of WC seat vs ball</text>
+  <text x="52" y="136" font-size="9.5" fill="#64748B">surface — self-cleaning, narrow</text>
+  <text x="52" y="148" font-size="9.5" fill="#64748B">line contact → high seal pressure</text>
+
+  <!-- ② Second seal: taper wedged in body -->
+  <line x1="290" y1="176" x2="400" y2="118" stroke="#1E293B" stroke-width="0.9" marker-end="url(#arrow)"/>
+  <line x1="400" y1="118" x2="470" y2="118" stroke="#1E293B" stroke-width="0.9"/>
+  <text x="478" y="110" font-size="11" font-weight="bold" fill="#1E293B">② Second sealing face</text>
+  <text x="478" y="122" font-size="9.5" fill="#64748B">Outer taper of seat wedged into</text>
+  <text x="478" y="134" font-size="9.5" fill="#64748B">mating taper in body. Larger end</text>
+  <text x="478" y="146" font-size="9.5" fill="#64748B">toward ball. Media pressure pushes</text>
+  <text x="478" y="158" font-size="9.5" fill="#64748B">seat tighter — self-energising seal</text>
+
+  <!-- ③ Large-diameter land (301) -->
+  <line x1="244" y1="160" x2="400" y2="60" stroke="#1E293B" stroke-width="0.9" marker-end="url(#arrow)"/>
+  <line x1="400" y1="60" x2="470" y2="60" stroke="#1E293B" stroke-width="0.9"/>
+  <text x="478" y="52" font-size="11" font-weight="bold" fill="#1E293B">③ Large-diam land (301)</text>
+  <text x="478" y="64" font-size="9.5" fill="#64748B">Axial straight land at taper large end</text>
+  <text x="478" y="76" font-size="9.5" fill="#64748B">— centres the seat in the body bore</text>
+
+  <!-- ④ Small-diameter land (302) -->
+  <line x1="298" y1="196" x2="470" y2="210" stroke="#1E293B" stroke-width="0.9" marker-end="url(#arrow)"/>
+  <line x1="470" y1="210" x2="540" y2="210" stroke="#1E293B" stroke-width="0.9"/>
+  <text x="548" y="202" font-size="11" font-weight="bold" fill="#1E293B">④ Small-diam land (302)</text>
+  <text x="548" y="214" font-size="9.5" fill="#64748B">Axial straight land at taper small end</text>
+
+  <!-- ⑤ Radial land / clearance -->
+  <line x1="302" y1="310" x2="410" y2="368" stroke="#1E293B" stroke-width="0.9" marker-end="url(#arrow)"/>
+  <line x1="410" y1="368" x2="480" y2="368" stroke="#1E293B" stroke-width="0.9"/>
+  <text x="488" y="360" font-size="11" font-weight="bold" fill="#1E293B">⑤ Radial land (303)</text>
+  <text x="488" y="372" font-size="9.5" fill="#64748B">Radial segment, small gap to body —</text>
+  <text x="488" y="384" font-size="9.5" fill="#64748B">avoids over-sealing (ref. patent claim 3)</text>
+
+  <!-- ⑥ Flow bore -->
+  <line x1="300" y1="250" x2="480" y2="300" stroke="#1E293B" stroke-width="0.9" marker-end="url(#arrow)"/>
+  <line x1="480" y1="300" x2="540" y2="300" stroke="#1E293B" stroke-width="0.9"/>
+  <text x="548" y="292" font-size="11" font-weight="bold" fill="#1E293B">⑥ Flow bore</text>
+  <text x="548" y="304" font-size="9.5" fill="#64748B">Bore matches ball port. Typical</text>
+  <text x="548" y="316" font-size="9.5" fill="#64748B">Ø 15–65 mm, taper 20°–45°</text>
+
+  <!-- ============ LEGEND ============ -->
+  <g transform="translate(40, 440)">
+    <rect x="0" y="0" width="200" height="52" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="12" y="16" font-size="10" font-weight="bold" fill="#1E293B">Materials</text>
+    <rect x="12" y="24" width="16" height="10" fill="url(#seat)" stroke="#1E293B" stroke-width="0.8"/>
+    <text x="34" y="33" font-size="9.5" fill="#475569">WC seat (YG15C / YG10 class)</text>
+    <rect x="120" y="24" width="16" height="10" fill="url(#ball)" stroke="#1E293B" stroke-width="0.8"/>
+    <text x="142" y="33" font-size="9.5" fill="#475569">WC / coated steel ball</text>
+    <rect x="12" y="39" width="16" height="10" fill="url(#body)" stroke="#1E293B" stroke-width="0.8"/>
+    <text x="34" y="48" font-size="9.5" fill="#475569">Valve body (steel)</text>
+  </g>
+
+  <text x="380" y="500" font-size="9" fill="#94A3B8">Schematic — not to scale. Structure per patent CN220668450U (taper back seal, scraper face, locating lands, radial clearance). Typical: seat OD 25–110 mm, bore Ø 15–65 mm, taper 20°–45°, grade YG15C for high-ΔP service.</text>
+</svg>
