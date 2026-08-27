@@ -16,7 +16,11 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  background: var(--paper); color: var(--ink);
+  /* 站点背景：纸色 85% 遮罩 + 素材背景图（图以 15% 强度透出，覆盖全视口） */
+  background:
+    linear-gradient(rgba(251, 250, 247, 0.85), rgba(251, 250, 247, 0.85)),
+    url('assets/bg-site.jpg') center / cover no-repeat fixed;
+  color: var(--ink);
   font-family: "Segoe UI", Arial, "Helvetica Neue", sans-serif;
   line-height: 1.65; font-size: 16px;
 }
@@ -58,7 +62,13 @@ header { background: var(--white); color: var(--ink); border-bottom: 1px solid v
 .btn-white:hover { background: #E8EEF6; }
 
 /* ---------- hero ---------- */
-.hero { background: var(--white); border-bottom: 1px solid var(--line); }
+.hero {
+  /* hero 区（导航与徽章横幅之间）：白 85% 遮罩 + 背景图（15% 透出，固定视口） */
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('assets/bg-site.jpg') center / cover no-repeat fixed;
+  border-bottom: 1px solid var(--line);
+}
 .hero-slogan { color: var(--blue); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px; }
 .slogan-line { color: var(--blue); font-size: 0.95rem; margin-bottom: 12px; }
 .slogan-line em { font-style: italic; }
