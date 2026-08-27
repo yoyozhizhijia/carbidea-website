@@ -175,17 +175,19 @@ a.prod-card:hover { border-color: var(--mid-blue); box-shadow: 0 4px 16px rgba(3
   line-height: 1; user-select: none; flex: 0 0 auto;
 }
 
-/* 六个方块：从左到右由深到浅渐变（首块深蓝不变、末块浅灰白，中间均匀过渡） */
-.how-step:nth-child(1),
-.how-step:nth-child(2),
-.how-step:nth-child(3),
-.how-step:nth-child(4) { color: #fff; }
-.how-step:nth-child(1) { background: #1E4E8C; }
-.how-step:nth-child(2) { background: #35669B; }
-.how-step:nth-child(3) { background: #4A78AC; }
-.how-step:nth-child(4) { background: #6989B3; }
-.how-step:nth-child(5) { background: #9DAEC5; color: var(--ink); }
-.how-step:nth-child(6) { background: #E9EDF3; color: var(--ink); }
+/* 六个方块：前三个蓝色阶（深→浅），后三个灰色阶（深→浅）。
+   注意：how-step 与 how-arrow 在 .how-grid 内交错排列，须用 :nth-of-type(dv) 按 div 序号选取，
+   不能用 :nth-child（会命中箭头 span，导致方块 04-06 落回默认背景）。 */
+.how-step:nth-of-type(1),
+.how-step:nth-of-type(2),
+.how-step:nth-of-type(3),
+.how-step:nth-of-type(4) { color: #fff; }
+.how-step:nth-of-type(1) { background: #1E4E8C; }
+.how-step:nth-of-type(2) { background: #35669B; }
+.how-step:nth-of-type(3) { background: #4A78AC; }
+.how-step:nth-of-type(4) { background: #6B7A8C; }
+.how-step:nth-of-type(5) { background: #9AA6B0; color: var(--ink); }
+.how-step:nth-of-type(6) { background: #E2E7EC; color: var(--ink); }
 
 /* ---------- resources ---------- */
 .res-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
